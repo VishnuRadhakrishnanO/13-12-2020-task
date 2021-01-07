@@ -1,0 +1,129 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-color: rgb(146, 141, 141);
+}
+@media (min-width: 900px) {
+#container{
+	width: 1000px;
+	height: 550px;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images.jpg);
+	margin: 20px auto;	
+}
+}
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+    height: 120px;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: rgb(124, 120, 120);
+    background-color: rgb(206, 157, 247);
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+
+
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#inst{
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    background-color:#919191 ;
+    color: rgb(41, 38, 38);
+    padding-top: 10px;
+    border: 3px solid;
+    border-radius: 0px;
+    border-color: rgb(124, 120, 120);
+}
+
+#keyboard{
+    height: 325px;
+  background-color: rgb(241, 184, 184);
+ 
+}
+
+.operator, .number,  .empty{
+	width: 45px;
+	height: 40px;
+	margin: 13px;
+	float: left;
+    border-radius: 50% ;
+   color: rgb(116, 13, 13);
+    border-width: 0;
+	font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgb(42, 90, 179);
+    
+}
+
+.number, .empty{
+	background-color: #71b7e6;
+
+
+}
+
+
+@media only screen and (max-width: 576px) {
+    #calculator{
+        width: 220px;
+        height:auto;
+        background-color:  #eaedef;
+        margin: 0 auto;
+        top: 20px;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #keyboard{
+        height: 200px;
+
+    }
+    .operator,.number,  .empty{
+        width: 25px;
+        height: 25px;
+        margin: 7px;
+        float: left;
+        border-radius: 50% ;
+       color: rgb(116, 13, 13);
+        border-width: 0;
+        font-weight: bold;
+        font-size: 10px;
+        cursor: pointer;
+        background-color: rgb(42, 90, 179);
+       
+    }
+    
+    .number, .empty{
+        background-color: #71b7e6;
+    
+    
+    }
+
+    #output{
+        text-align: right;
+        height: 60px;
+        margin: 10px 20px;
+        font-size: 20px;
+    }
+
+}
